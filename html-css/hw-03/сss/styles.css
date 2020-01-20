@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-style: 14px;
+    color: #626262;
+    line-height: 24px;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    padding: 72px 0;
+}
+
+.site-navigation {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.site-navigation li {
+    display:inline-block;
+    margin-right: 92px;
+}
+
+.site-navigation li:last-child{
+    margin-right: 160px;
+}
+
+.site-navigation li:first-child{
+    margin-left: 160px;
+}
+
+.site-navigation a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #626262;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #03a9f4;
+}
