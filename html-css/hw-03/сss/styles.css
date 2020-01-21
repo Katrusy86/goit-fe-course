@@ -96,6 +96,7 @@ p,h1,h2,h3 {
     display: inline-block;
     width: 420px;
     margin-bottom: 130px;
+    vertical-align: top;
 }
 
 .post__list--item:not(:nth-child(2n)){
@@ -121,7 +122,6 @@ p,h1,h2,h3 {
 .post__list--item h2 {
     font-size: 30px;
     margin-bottom: 32px;
-    cursor: pointer;
 }
 
 .post__list--item h2:hover,
@@ -133,18 +133,15 @@ p,h1,h2,h3 {
     font-size: 14px;
 }
 
-.button {
-    text-align: center;
-    margin-bottom: 70px;
-}
-
 .button__act {
-    margin: 0;
+    display: block;
+    margin: 0 auto;
     border: 1px solid rgb(98, 98, 98);
     font-size: 20px;
     padding: 21px 33px;
     line-height: 24px;
     background: #fff;
+    text-align: center;
     cursor: pointer;
 }
 
