@@ -21,7 +21,7 @@ body {
 
 .clearfix {
     display: table;
-    content: "";
+    content: '';
     clear: both;
 }
 
@@ -42,4 +42,49 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.site__logo {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.site__logo p {
+    font-size: 30px;
+    line-height: 32px;
+    font-family: 'Roboto';
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #555252;
+}
+
+.site__logo p::first-letter {
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+.site__navigation {
+    margin: 0;
+    padding: 0;
+    width: 505px;    
+}
+
+.site__navigation a {
+    display: block;
+    font-family: 'OpenSans' sans-serif;
+    font-weight: 700;
+    color: #0f0101;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 11px;
+    text-decoration: none;
+}
+
+.site__navigation li {
+    float:left;
+    list-style: none;   
+}
+
+.site__navigation li:not(:last-child) {
+    margin-right: 38px;
 }
