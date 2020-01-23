@@ -10,6 +10,7 @@ html {
 
 body {
     font-size: 14px;
+    color: #555252;
     font-family: 'Roboto', sans-serif;
     font-family: 'OpenSans', sans-serif;
 }
@@ -19,7 +20,7 @@ body {
     margin: 0 auto;
 }
 
-.clearfix {
+.clearfix::after {
     display: table;
     content: '';
     clear: both;
@@ -29,6 +30,11 @@ img {
     max-width: 100%;
     margin: auto;
     display: block;
+}
+
+p, h1,h2,h3 {
+    margin: 0;
+    padding: 0;
 }
 
 .visually-hidden {
@@ -44,29 +50,36 @@ img {
     overflow: hidden;
 }
 
-.site__logo {
-    display: inline-block;
-    text-decoration: none;
+.page__header {
+    margin-bottom: 110px;
 }
 
-.site__logo p {
+/* Menu navigation */
+.page__nav {
+    padding-top: 42px;
+}
+
+.site__logo {
     font-size: 30px;
     line-height: 32px;
     font-family: 'Roboto';
     font-weight: 100;
-    text-transform: uppercase;
     color: #555252;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
 }
 
-.site__logo p::first-letter {
+.site__logo::first-letter {
     color: #1abc9c;
     font-weight: 600;
 }
 
 .site__navigation {
-    margin: 0;
-    padding: 0;
-    width: 505px;    
+    float: right;
+    width: 505px;
+    padding: 0; 
+    margin-top: 10px;   
 }
 
 .site__navigation a {
@@ -80,11 +93,164 @@ img {
     text-decoration: none;
 }
 
+.site__navigation a:hover,
+.site__navigation a:focus {
+    color:#1abc9c
+}
+
 .site__navigation li {
-    float:left;
+    float: left;
     list-style: none;   
 }
 
 .site__navigation li:not(:last-child) {
-    margin-right: 38px;
+    margin-right: 35px;
+}
+
+/* Featured products */
+.featured {
+    margin-bottom: 102px;
+}
+
+.featured__title {
+    margin-bottom: 94px;
+}
+
+.featured__title {
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #515151;
+}
+
+.featured__title::after {
+    content: '';
+    display: block;
+    background-color: rgb(26, 188, 156);
+    width: 164px;
+    height: 7px;
+    margin: 0 auto; 
+    margin-top: 32px;  
+}
+
+.featured__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.featured__list li {
+    float: left;
+}
+
+.featured__list--item {
+    width: 255px;
+    margin-bottom: 30px;
+}
+
+.featured__list--item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.featured__list--item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.product__title {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(50, 50, 50);
+    padding: 10px 13px;
+}
+
+.product__price {
+    margin: 0 auto;
+    width: 55px;
+    height: 40px;
+    background-color:#8c8c8c;
+    padding: 10px;
+}
+
+.product__item--price p {
+    float: left;
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* News section */
+.news {
+    margin-bottom: 80px;
+}
+
+.news__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.news__list li {
+    float: left;
+}
+
+.news__list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.news__list--item {
+    width: 350px;
+}
+
+.news__list--item img {
+    margin-bottom: 12px;
+}
+
+.news__list--title {
+    font-family: 'OpenSans' sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.news__list--title::after {
+    content: '';
+    display: block;
+    background-color: rgb(26, 188, 156);
+    width: 136px;
+    height: 3px; 
+    margin-top: 12px;
+}
+
+.news__list--about {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'OpenSans'sans-serif;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.news__list--button {
+    border: none;
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    font-family: 'OpenSans' sans-serif;
+    font-weight: 200;
+    color: #ffff;
+    padding: 16px 40px;
+    border-radius: 3px;
+    background-color: rgb(78, 198, 171);
+}
+
+.news__list--button:hover,
+.news__list--button:focus {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
 }
