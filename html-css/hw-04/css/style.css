@@ -163,15 +163,20 @@ p, h1,h2,h3 {
     width: 200px;
     height: 40px;
     background-color: rgb(50, 50, 50);
-    padding: 10px 13px;
-}
+} 
 
 .product__price {
-    margin: 0 auto;
     width: 55px;
     height: 40px;
     background-color:#8c8c8c;
-    padding: 10px;
+} 
+
+.product__title:hover {
+    background-color: rgb(26, 188, 156);
+}
+
+.product__title:hover + .product__price {
+    background-color: rgb(127, 217, 199);
 }
 
 .product__item--price p {
@@ -180,6 +185,7 @@ p, h1,h2,h3 {
     font-family: 'Roboto';
     color: #ffffff;
     text-transform: uppercase;
+    padding: 10px 13px;
 }
 
 /* News section */
