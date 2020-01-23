@@ -171,11 +171,11 @@ p, h1,h2,h3 {
     background-color:#8c8c8c;
 } 
 
-.product__title:hover {
+.featured__list--item:hover .product__title {
     background-color: rgb(26, 188, 156);
 }
 
-.product__title:hover + .product__price {
+.featured__list--item:hover .product__title + .product__price {
     background-color: rgb(127, 217, 199);
 }
 
