@@ -208,7 +208,7 @@ p, h1,h2,h3 {
 }
 
 .news__list--item {
-    width: 350px;
+    max-width: 350px;
 }
 
 .news__list--item img {
