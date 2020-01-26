@@ -51,8 +51,8 @@ p, h1,h2,h3 {
     overflow: hidden;
 }
 
-.page__header {
-    margin-bottom: 110px;
+.products {
+    padding-bottom: 102px;
 }
 
 /* Menu navigation */
@@ -110,10 +110,6 @@ p, h1,h2,h3 {
 }
 
 /* Featured products */
-.products {
-    margin-bottom: 102px;
-}
-
 .featured__title {
     margin-bottom: 94px;
 }
