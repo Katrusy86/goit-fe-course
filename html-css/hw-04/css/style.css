@@ -51,11 +51,11 @@ p, h1,h2,h3 {
     overflow: hidden;
 }
 
-.page_products {
-    padding-bottom: 102px;
+/* Menu navigation */
+.page_header {
+padding-bottom: 104px;
 }
 
-/* Menu navigation */
 .page__nav {
     padding-top: 42px;
 }
@@ -110,11 +110,15 @@ p, h1,h2,h3 {
 }
 
 /* Featured products */
-.featured__title {
+.page_products {
+    padding-bottom: 102px;
+}
+
+.products__title {
     margin-bottom: 94px;
 }
 
-.featured__title {
+.products__title {
     font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -124,7 +128,7 @@ p, h1,h2,h3 {
     color: #515151;
 }
 
-.featured__title::after {
+.products__title::after {
     content: '';
     display: block;
     background-color: rgb(26, 188, 156);
