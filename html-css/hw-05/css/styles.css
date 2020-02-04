@@ -236,11 +236,111 @@ img {
     margin-bottom: 0;
 }
 
+.product__card {
+    position: relative;
+    
+}
+
+.overlay {
+    position: absolute;
+    width: 235px;
+    height: 261px;
+    background-color: rgba(0, 0, 0,0.55);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translate(10px, 12px);
+}
+
+.product__card:hover .overlay {
+    opacity: 1;
+}  
+
+.overlay__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 165px;
+}
+
+.overlay__list li {
+    display: inline-block;
+    margin-right: 10px;
+} 
+
+.overlay__list li:last-child {
+    margin-right: 0;
+}
+
+.overlay__item a {
+    display: block;
+    border: 2px solid #fff;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.overlay__list li:hover {
+    background-color: rgba(26, 188, 156);
+}
+
+.overlay__icon--like {
+    background-image: url(../img/icons/like.png);
+}
+
+.overlay__icon--related {
+    background-image: url(../img/icons/related.png);
+}
+
+.overlay__icon--time {
+    background-image: url(../img/icons/time.png);
+}
+
+.overlay__button {
+    border: 1px solid #fff;
+    background-color: rgb(50, 50, 50);
+    width: 164px;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    padding: 11px 8px;
+}
+
+.overlay__act {
+    font-size: 14px;
+    font-family: 'OpenSans',sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 32px;
+}
+
+.overlay__act::before {
+    background-image: url(../img/icons/cart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 27px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
 .product__item--descr {
     position: relative;
     background-color: rgb(50, 50, 50);
     width: 255px;
     height: 40px;
+    margin-top: -40px;
 }
 
 .product__item--price {
@@ -252,7 +352,6 @@ img {
     width: 54px;
     height: 40px;
 }
-
 
 .product__title {
     font-size: 18px;
@@ -271,6 +370,6 @@ img {
     right: 0;
 }
 
-.product__item--descr:hover {
+.product__card .overlay ~.product__item--descr:hover {  
     background: rgb(26, 188, 156);
 }
