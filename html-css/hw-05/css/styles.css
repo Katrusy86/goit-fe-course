@@ -119,12 +119,21 @@ img {
     width: 100%;
 }
 
-.overlay__image {
+.overlay__image::before {
     position: absolute;
     background-color: rgb(0, 0, 2);
     opacity: 0.522;
     width: 100%;
+    content: "";
     height: 600px;
+}
+
+.slider__block {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 1170px;
 }
 
 .slider__ctrl {
@@ -142,12 +151,12 @@ img {
 }
 
 .slider__ctrl--prev {
-    left: 20%;
+    left: 0;
     background-image: url(../img/icons/left.png);
 }
 
 .slider__ctrl--next {
-    right: 20%;
+    right: 0;
     background-image: url(../img/icons/right.png);
 }
 
@@ -162,10 +171,8 @@ img {
 }
 
 .sliders__item {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 764px;
+    margin:0 auto;
 }
 
 .sliders__item--title {
@@ -249,10 +256,10 @@ img {
     height: 261px;
     background-color: rgba(0, 0, 0,0.55);
     opacity: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    transform: translate(10px, 12px);
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right:10px;
     transition: all ease 1s;
 }
 
@@ -339,41 +346,34 @@ img {
 }
 
 .product__item--descr {
-    position: relative;
     background-color: rgb(50, 50, 50);
-    width: 255px;
-    height: 40px;
-    margin-top: -40px;
     cursor: pointer;
     transition: all ease 1s;
 }
 
 .product__item--price {
-    position: absolute;
-    right: 0;
-    top: 0;
-    opacity: 0.44;
-    background-color: rgb(255, 255, 255);
-    width: 54px;
-    height: 40px;
+    width: 55px;
+    line-height: 40px;
+    background-color: rgba(255,255,255,0.44);
+    float: right;
+    text-align: center;
 }
 
 .product__title {
     font-size: 18px;
     color: #fff;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .product__title--title {
-    left: 30%;
+    width: 200px;
+    line-height: 40px;
+    float: left;
+    padding-left: 13px;
 }
 
-.product__title--price {
+/* .product__title--price {
     right: 0;
-}
+} */
 
 .products__list--item:hover .product__item--descr {
     background-color: rgb(26, 188, 156);
