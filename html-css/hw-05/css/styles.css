@@ -239,6 +239,7 @@ img {
 .products__list--item {
     position: relative;
     height: 280px;
+    width: 255px;
 }
 
 .overlay {
@@ -336,23 +337,22 @@ img {
 
 .product__item--descr {
     background-color: rgb(50, 50, 50);
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 40px;
     cursor: pointer;
     transition: all ease 1s;
 }
 
 .product__title--title {
     width: 200px;
-    line-height: 40px;
     float: left;
-    font-size: 18px;
-    text-transform: uppercase;
     padding-left: 13px;
 }
 
 .product__item--price {
     width: 55px;
-    line-height: 40px;
-    font-size: 18px;
     background-color: rgba(255,255,255,0.44);
     float: right;
     text-align: center;
