@@ -142,7 +142,7 @@ img {
     text-decoration: none;
     width: 104px;
     height: 104px;
-    background-color: rgb(78, 198, 171, 0.65);
+    background-color: rgba(78, 198, 171, 0.65);
     top:50%;
     transform: translateY(-50%);
     background-repeat: no-repeat;
@@ -236,6 +236,7 @@ img {
     position: absolute;
     background-color: rgba(0, 0, 0,0.55);
     opacity: 0;
+    visibility: hidden;
     top: 10px;
     left: 10px;
     bottom: 10px;
@@ -245,6 +246,7 @@ img {
 
 .products__list--item:hover .overlay {
     opacity: 1;
+    visibility: visible;
 }  
 
 .overlay__list {
