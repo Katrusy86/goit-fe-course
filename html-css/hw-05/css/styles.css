@@ -344,15 +344,15 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 40px;
-    font-size: 18px;
     transition: all ease 1s;
 }
 
-.product__title--title {
+.product__title--title a {
     width: 200px;
     float: left;
     padding-left: 13px;
     color:#fff;
+    font-size: 18px;
 }
 
 .product__item--price {
