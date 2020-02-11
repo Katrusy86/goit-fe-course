@@ -160,7 +160,7 @@ img {
 }
 
 .slider__ctrl:hover {
-    opacity: 1;
+    background-color: rgb(78, 198, 171);
 } 
 
 .sliders__item {
