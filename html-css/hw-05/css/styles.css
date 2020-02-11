@@ -142,8 +142,7 @@ img {
     text-decoration: none;
     width: 104px;
     height: 104px;
-    background-color: rgb(78, 198, 171);
-    opacity: 0.651;
+    background-color: rgb(78, 198, 171, 0.65);
     top:50%;
     transform: translateY(-50%);
     background-repeat: no-repeat;
@@ -163,12 +162,6 @@ img {
 .slider__ctrl:hover {
     opacity: 1;
 } 
-
-.slider__content {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 .sliders__item {
     width: 764px;
