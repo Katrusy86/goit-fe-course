@@ -203,10 +203,6 @@ img {
 }
 
 .products__title {
-    margin-bottom: 80px;
-}
-
-.products__title {
     font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -214,6 +210,7 @@ img {
     text-transform: uppercase;
     text-align: center;
     color: #515151;
+    margin-bottom: 80px;
 }
 
 .products__title::after {
