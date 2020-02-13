@@ -282,7 +282,7 @@ ul, li {
 .team__list--wrapper:hover {
     box-shadow: 10px 10px 0 var(--text-color);
     transform: translate(-10px,-10px);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 
@@ -294,7 +294,7 @@ ul, li {
     background-color: rgb(252, 227, 138);
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .social__icon--item button:hover {
