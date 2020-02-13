@@ -294,6 +294,7 @@ ul, li {
     background-color: rgb(252, 227, 138);
     background-position: center;
     background-repeat: no-repeat;
+    transition: all 0.3s ease;
 }
 
 .social__icon--item button:hover {
