@@ -358,6 +358,7 @@ ul, li {
     color: #cccc;
     font-style: italic;
     padding-left: 12px;
+    line-height: 1.6;
 }
 
 .form__act {
