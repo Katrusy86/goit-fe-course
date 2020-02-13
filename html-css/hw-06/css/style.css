@@ -2,6 +2,9 @@
     --main-font:'Montserrat', sans-serif;
     --main-font-header:'Kaushan Script', cursive;
     --text-color:rgb(149, 225, 211);
+    --color-text-title:rgb(51, 51, 51);
+    --color-text:rgb(153, 153, 153);
+    --color-hover:rgb(243, 129, 129);
 }
 
 
@@ -85,10 +88,11 @@ ul, li {
 .navigation__item a::after {
     content: "";
     display: block;
-    background-color:rgb(243, 129, 129);
+    background-color:var(--color-hover);
     width: 0;
     height: 3px;
     margin-top: 5px;
+    transition: all ease 1s;
 } 
 
 .navigation__item a:hover::after {
@@ -96,7 +100,7 @@ ul, li {
 }
 
 .navigation__item a:hover {
-    color:rgb(243, 129, 129); 
+    color:var(--color-hover);
 }
 
 /* Services section */
@@ -112,6 +116,7 @@ ul, li {
 }
 
 .header__text {
+    color: var(--color-text-title);
     font-size: 24px;
     font-family: var(--main-font-header);
 }
@@ -121,12 +126,13 @@ ul, li {
     font-family: var(--main-font);
     text-transform: uppercase;
     margin-top: 19px;
+    color:var(--color-text-title);
 }
 
 .header__title::after {
     content: "";
     display: block;
-    background-color: rgb(243, 129, 129);
+    background-color:var(--color-hover);
     height: 3px;
     width: 60px;
     margin: 0 auto;
@@ -190,7 +196,7 @@ ul, li {
 .service__list--title {
     font-family: var(--main-font);
     text-transform: uppercase;
-    color: #333333;
+    color: var(--color-text-title);
     font-weight: 400;
 }
 
@@ -199,14 +205,18 @@ ul, li {
     font-size: 15px;
     font-weight: 400;
     margin-top: 18px;
-    color: #999999;
+    color:var(--color-text);
     line-height: 24px;
 }
 
 /* Our team section*/
+.team {
+    padding-bottom: 80px;
+}
+
 .team__description {
     font-size: 15px;
-    color: rgb(153, 153, 153);
+    color: var(--color-text);
     margin: 0 auto;
     line-height: 24px;
     width: 980px;
@@ -214,15 +224,149 @@ ul, li {
     margin-bottom: 88px;
 }
 
+.team__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__card {
+    text-align: center;
+}
+
 .team__list--name {
     font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 400;
-    color: rgb(51, 51, 51);
+    color: var(--color-text-title);
+    margin-bottom: 10px;
 }
 
 .team__list--position {
     font-size: 15px;
     font-style: italic;
-    color: rgb(153, 153, 153);
+    color: var(--color-text);
+}
+
+.social__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 470px;
+}
+
+.social__icon li {
+    margin-right: 1px;
+}
+
+.team__list--image {
+    margin-bottom: 40px;
+}
+
+.team__list--wrapper {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background-image: linear-gradient(to top, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.team__list--wrapper:hover .overlay{
+    opacity: 0.9;
+}
+
+.team__list--wrapper:hover {
+    box-shadow: 10px 10px 0 var(--text-color);
+    transform: translate(-10px,-10px);
+    transition: all 0.3s ease;
+}
+
+
+.social__icon--item button {
+    display: block;
+    border: 1px solid rgb(252, 227, 138);
+    width: 56px;
+    height: 56px;
+    background-color: rgb(252, 227, 138);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social__icon--item button:hover {
+    background-color: var(--text-color);
+}
+
+.facebook {
+    background-image: url(../img/icons/facebook.png);
+}
+
+.twitter {
+    background-image: url(../img/icons/twitter.png);
+}
+
+.pinterest {
+    background-image: url(../img/icons/pinterest.png);
+}
+
+.instagram {
+    background-image: url(../img/icons/instagram.png);
+}
+
+/* Footer */
+.footer__block {
+    background-color: rgb(229, 229, 229);
+    height: 1px;    
+}
+
+.footer__block--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height:63px;
+}
+
+.footer__text {
+    font-size: 14px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    display: flex;
+}
+
+.footer__text--item {
+    color: var(--color-text-title);
+}
+
+.footer__text--link {
+    color: var(--color-hover);
+    margin-left: 2px;
+}
+
+.form {
+    display: flex;
+}
+
+.form__input {
+    width: 234px;
+    height: 44px;
+    border:1px solid rgb(231, 231, 231);
+    font-size: 15px;
+    color: #cccc;
+    font-style: italic;
+    padding-left: 12px;
+}
+
+.form__act {
+    width: 150px;
+    height: 44px;
+    background-color: var(--text-color);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-weight: 700;
 }
