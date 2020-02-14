@@ -255,7 +255,6 @@ ul, li {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 470px;
 }
 
 .social__icon li {
@@ -264,21 +263,23 @@ ul, li {
 
 .team__list--wrapper {
     position: relative;
-    transition: all .2s linear .2s;
+    transition: all .2s linear;
 }
 
 .overlay {
     position: absolute;
-    background-image: linear-gradient(to top, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%);
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    opacity: 0;
     visibility: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .team__list--wrapper:hover .overlay{
-    opacity: 0.9;
+    opacity: 1;
     visibility: visible;
 }
 
@@ -295,7 +296,6 @@ ul, li {
     background-color: rgb(252, 227, 138);
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.3s ease;
 }
 
 .social__icon--item button:hover {
