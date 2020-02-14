@@ -229,6 +229,10 @@ ul, li {
     justify-content: space-between;
 }
 
+.team__list--image {
+    margin-bottom: 40px;
+}
+
 .team__card {
     text-align: center;
 }
@@ -258,10 +262,6 @@ ul, li {
     margin-right: 1px;
 }
 
-.team__list--image {
-    margin-bottom: 40px;
-}
-
 .team__list--wrapper {
     position: relative;
 }
@@ -282,7 +282,7 @@ ul, li {
 .team__list--wrapper:hover {
     box-shadow: 10px 10px 0 var(--text-color);
     transform: translate(-10px,-10px);
-    transition: all 0.2s ease;
+    transition: all .2s linear .2s;
 }
 
 
