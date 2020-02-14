@@ -30,7 +30,7 @@ a {
 }
 
 .container {
-    width: 1201px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -58,11 +58,14 @@ ul, li {
 }
 
 /* Navigation menu */
+.page__header {
+    padding-top: 38px;
+    padding-bottom: 100px;
+}
+
 .page__navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    min-height: 80px;
 }
 
 .site__logo {
@@ -106,7 +109,6 @@ ul, li {
 /* Services section */
 
 .services {
-    padding-top: 86px;
     padding-bottom: 90px;
 }
 
@@ -294,7 +296,7 @@ ul, li {
     background-color: rgb(252, 227, 138);
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .social__icon--item button:hover {
@@ -318,12 +320,14 @@ ul, li {
 }
 
 /* Footer */
-.footer__block {
+.page__footer::before {
     background-color: rgb(229, 229, 229);
-    height: 1px;    
+    height: 1px; 
+    content: "";
+    display: block;   
 }
 
-.footer__block--item {
+.footer__block {
     display: flex;
     justify-content: space-between;
     align-items: center;
