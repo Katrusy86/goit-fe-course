@@ -78,6 +78,7 @@ ul, li {
     display: flex;
     justify-content: space-between;
     width: 510px;
+    padding-top: 10px;
 }
 
 .navigation__item a {
@@ -110,23 +111,21 @@ ul, li {
     padding-bottom: 90px;
 }
 
-.header__block {
-    text-align: center;
-    margin-bottom: 64px;
-}
-
 .header__text {
     color: var(--color-text-title);
     font-size: 24px;
     font-family: var(--main-font-header);
+    text-align: center;
 }
 
 .header__title {
+    display: block;
     font-size: 30px;
     font-family: var(--main-font);
     text-transform: uppercase;
     margin-top: 19px;
     color:var(--color-text-title);
+    margin-bottom: 64px;
 }
 
 .header__title::after {
@@ -201,7 +200,6 @@ ul, li {
 }
 
 .service__list--text {
-    width: 276px;
     font-size: 15px;
     font-weight: 400;
     margin-top: 18px;
@@ -227,6 +225,10 @@ ul, li {
 .team__list {
     display: flex;
     justify-content: space-between;
+}
+
+.team__list--item {
+    width: 381px;
 }
 
 .team__list--image {
@@ -319,7 +321,7 @@ ul, li {
 }
 
 /* Footer */
-.page__footer::before {
+.footer::before {
     background-color: rgb(229, 229, 229);
     height: 1px; 
     content: "";
@@ -357,6 +359,9 @@ ul, li {
     width: 234px;
     height: 44px;
     border:1px solid rgb(231, 231, 231);
+}
+
+.form__input::placeholder {
     font-size: 15px;
     color: #cccc;
     font-style: italic;
