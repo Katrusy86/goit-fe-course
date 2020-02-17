@@ -206,7 +206,7 @@ img {
 .services__list--text {
     font-family: var(--main-font);
     font-weight: 300;
-    color: var(--main-color);
+    color: #777;
     line-height: 1.30rem;
 }
 
