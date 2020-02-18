@@ -75,6 +75,8 @@ img {
     overflow:hidden;
 }
 
+/* Main page */
+
 .background__image {
     background-image:url(../img/background/Mobile_01.jpg);
     background-color: rgb(26, 25, 21);
@@ -94,9 +96,6 @@ img {
     display: flex;
     padding-top: 20px;
     margin: 0 auto;
-}
-
-.navigation__list--item {
 }
 
 .button__header {
@@ -146,6 +145,10 @@ img {
     margin-bottom: 38px;
 }
 
+.button__act {
+    text-align: center;
+}
+
 .button__act--item {
     font-family: var(--main-font-header);
     font-weight: 700;
@@ -156,6 +159,8 @@ img {
     padding: 15px 24px; 
     display: inline-block;   
 }
+
+/* Partner */
 
 .partner {
     padding-bottom: 56px;
@@ -242,6 +247,10 @@ img {
     margin-bottom: 0;
 }
 
+.partner__act {
+    text-align: center;
+}
+
 .partner__button {
     border:2px solid rgb(255, 78, 80);
     border-radius: 20px;
@@ -322,10 +331,6 @@ img {
 
     .partner__list--item:nth-child(-n+2) {
         margin-bottom: 0;
-    }
-
-    .partner__act {
-        text-align: center;
     }
 }
 
