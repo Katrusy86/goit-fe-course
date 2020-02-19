@@ -160,6 +160,11 @@ img {
     display: inline-block;   
 }
 
+.button__act--item:hover {
+    background-color: transparent;
+    color: rgb(255, 78, 80);
+}
+
 /* Partner */
 
 .partner {
@@ -261,6 +266,11 @@ img {
     background-color: transparent;
     font-weight: 700;
     display: inline-block;
+}
+
+.partner__button:hover {
+    background-color: rgb(255, 78, 80);
+    color: #fff;
 }
 
 @media screen and (min-width:768px){
