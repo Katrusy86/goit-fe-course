@@ -236,6 +236,11 @@ img {
     justify-content: space-between;
 }
 
+.contact__form--list,
+.contact__form--message {
+    width:calc(50% - 15px);
+}
+
 .contact__form--list li {
     margin-bottom: 1.6rem;
 }
@@ -259,10 +264,17 @@ img {
     resize: none;
 }
 
+.contact__form--input {
+    width: 100%;
+}
+
+.contact__form--message {
+    width: 28.6875rem;
+}
+
 .contact__form--input, .contact__form--message {
     border:1px solid rgb(204, 204, 204);
     padding: 1.25rem;
-    width: 28.6875rem;
 }
 
 .contact__form--btn {
