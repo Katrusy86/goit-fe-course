@@ -156,7 +156,7 @@ img {
     border-radius: 20px;
     border: 1px solid rgb(255, 78, 80) ;
     background-color: rgb(255, 78, 80);
-    padding: 15px 24px; 
+    padding: 15px 30px; 
     display: inline-block;   
 }
 
@@ -176,13 +176,14 @@ img {
 }
 
 .partner__list {
-    margin-bottom: 39px;
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 38px;
 }
 
 .partner__list li {
-    margin: 0 auto 24px;
-    width: 260px;
-}
+    margin-bottom: 24px ;
+} 
 
 .partner__wrapper {
     position: relative;
@@ -315,7 +316,13 @@ img {
     .partner__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        width: 460px;
     } 
+
+    .partner__list--item {
+        width: 200px;
+    }
     
     .partner__list--item:nth-child(2) {
         order:2;
@@ -355,6 +362,7 @@ img {
 
     .partner__list {
         flex-wrap: nowrap;
+        width: auto;
     }
 
     .partner__list--item:nth-last-child(-n+4) {
