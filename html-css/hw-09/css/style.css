@@ -1,11 +1,21 @@
 
+/* roboto-300 - latin */
 @font-face {
     font-family: 'Roboto';
-    font-style: italic;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 400;
-    src: local('Roboto Italic'), local('Roboto-Italic'),
-         url('../fonts/roboto-v20-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/roboto-v20-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
 @font-face {
@@ -27,7 +37,7 @@ html {
 
 body {
     font-size: 14px;
-    font-family:var(--main-font-header);
+    font-family:'Montserrat',sans-serif;
 }
 
 *,
@@ -45,21 +55,6 @@ ul, ol {
 a {
     text-decoration: none;
 }
-
-.container {
-    margin: 0 auto;
-    min-width:320px;
-    max-width: 1440px;    
-    /* width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto; */
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-} 
 
 img {
     max-width: 100%;
@@ -80,13 +75,18 @@ img {
     overflow:hidden;
 }
 
-.page__wrapper {
-    background-image:url(../img/background/Desktop_01.jpg);
+.header {
+    background-image:url(../img/background/Mobile_01.jpg);
     background-color: rgb(26, 25, 21);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .login__btn {
@@ -112,44 +112,176 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
+    display: block;
 }
 
 .site__header {
-    font-size: 30px;
-    font-family: var(--main-font-header);
+    font-size: 29px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    text-align: center;
 }
 
 .site__title {
     font-size: 18px;
-    font-family:var(--main-font_text) ;
-    font-weight: 400;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
     color: #fff;
     text-transform: none;
-    width: 221px;
     margin:0 auto;
+    margin-bottom: 38px;
+}
+
+.button__act {
     text-align: center;
 }
 
-button__act {
+.header {
+    padding: 20px 0;
+}
+
+.partner {
+    padding-bottom: 56px;
+}
+
+.partner__header {
+    font-size: 22px;
+    font-family: 'Montserrat',sans-serif;
+    color:#333;
     text-align: center;
+    padding-top: 68px;
+    margin-bottom: 18px;
+}
+
+.partner__wrapper {
+    position: relative;
+    width: 121px;
+    margin: 0 auto;
+}
+
+.partner__wrapper::after {
+    content: '';
+    position: absolute;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon__tv::after {
+    position: absolute;
+    background-image: url(../img/icon/Shape\ 128.png);
+    background-color: rgb(255, 78, 80);
+}
+
+.icon__bottle::after {
+    position: absolute;
+    background-image: url(../img/icon/Shape\ 155.png);
+    background-color: rgb(255, 165, 7);
+}
+
+.icon__cup::after {
+    position: absolute;
+    background-image: url(../img/icon/Shape\ 153.png);
+    background-color: rgb(28, 215, 173);
+}
+
+.icon__plane::after {
+    position: absolute;
+    background-image: url(../img/icon/Shape\ 170.png);
+    background-color: rgb(78, 115, 219);
 }
 
 .button__act--item {
-    font-family: var(--main-font-header);
     font-weight: 700;
     color: #fff;
     border-radius: 20px;
     border: 1px solid rgb(255, 78, 80) ;
     background-color: rgb(255, 78, 80);
     padding: 15px 30px; 
-    display: inline-block;   
+    display: inline-block;  
 }
 
 .button__act--item:hover {
     background-color: transparent;
     color: rgb(255, 78, 80);
 }
+
+.partner__item--title, .partner__item--text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    padding: 0 35px;
+}
+
+.partner__item--title {
+    font-family:'Montserrat',sans-serif;
+}
+.partner__item--text {
+    font-family:'Roboto',sans-serif;
+    font-weight:400 ;
+    color: #666;
+}
+
+.partner__button {
+    border:2px solid rgb(255, 78, 80);
+    border-radius: 20px;
+    padding: 14px 28px;
+    color: rgb(255, 78, 80);
+    background-color: transparent;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 38px;
+}
+
+.partner__button:hover {
+    background-color: rgb(255, 78, 80);
+    color: #fff;
+}
+
+@media (max-width:767px) {
+    .partner__block[class*="col-"]:not(:last-child){
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .background__image {
+        background-image: url(../img/background/Tablet.jpg);
+    } 
+
+    .site__title {
+        margin-top: 35px;
+        font-size: 23px;
+    }
+
+    .site__header {
+        font-size: 52px;
+        margin: 0 auto;
+    }
+
+    .partner__block[class*="col-"]:nth-child(even) {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .background__image {
+        background-image: url(../img/background/Desktop_01.jpg);
+    }
+
+    .partner__item--text {
+        padding: 0;
+    }
+
+    .partner__block[class*="col-"]:nth-child(-n+4){
+        margin-bottom: 0;
+    }
+}
+
+
+
