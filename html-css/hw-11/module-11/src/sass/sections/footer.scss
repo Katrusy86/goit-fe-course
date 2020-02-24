@@ -1,0 +1,104 @@
+.page-footer__container::before {
+  background-color: rgb(229, 229, 229);
+  height: 1px;
+  content: "";
+  display: block;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height:63px;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-family: $main-font;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__text-item {
+  color: $color-text-title;
+}
+
+.footer__text-link {
+  color: $color-hover;
+  margin-left: 2px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__input {
+  width: 234px;
+  height: 44px;
+  border:1px solid rgb(231, 231, 231);
+}
+
+.form__input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #cccc;
+  font-style: italic;
+  padding-left: 12px;
+  line-height: 1.6;
+}
+
+.form__input::-moz-placeholder {
+  font-size: 15px;
+  color: #cccc;
+  font-style: italic;
+  padding-left: 12px;
+  line-height: 1.6;
+}
+
+.form__input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #cccc;
+  font-style: italic;
+  padding-left: 12px;
+  line-height: 1.6;
+}
+
+.form__input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #cccc;
+  font-style: italic;
+  padding-left: 12px;
+  line-height: 1.6;
+}
+
+.form__input::placeholder {
+  font-size: 15px;
+  color: #cccc;
+  font-style: italic;
+  padding-left: 12px;
+  line-height: 1.6;
+}
+
+.form__act {
+  width: 150px;
+  height: 44px;
+  background-color: $text-color;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: $main-font;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form__input, .form__act {
+  padding-left: 15px;
+}

@@ -78,9 +78,9 @@ img {
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgb(243,129,129,0.9))), url(../img/background.jpg);
-    background-image: -o-linear-gradient(bottom, rgba(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%), url(../img/background.jpg);
-    background-image: linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%), url(../img/background.jpg); ;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9))), url(../img/background.jpg);
+    background-image: -o-linear-gradient(bottom, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(../img/background.jpg);
+    background-image: linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(../img/background.jpg); ;
 }
 
 @media ( -webkit-min-device-pixel-ratio: 2 ), ( -o-min-device-pixel-ratio: 2/1 ), ( min-resolution: 192dpi ) {
@@ -354,9 +354,9 @@ img {
 
 .socials {
     position: absolute;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgb(243,129,129,0.9)));
-    background-image: -o-linear-gradient(bottom, rgba(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%);
-    background-image: linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9)));
+    background-image: -o-linear-gradient(bottom, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+    background-image: linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
     width: 100%;
     height: 100%;
     top: 0;
